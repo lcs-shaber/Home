@@ -10,9 +10,9 @@ import SwiftUI
 struct ContentView: View {
     
     // Mark: Stored properties
-    let firstGradientColors = Gradient(colors: [.white, .deepBlue, .deepPurple, .clear])
+    let firstGradientColors = Gradient(colors: [.white, .blue, .deepPurple, .clear])
 
-    let secondGradientColors = Gradient(colors: [.yellow,  .deepPurple,  .clear])
+    let secondGradientColors = Gradient(colors: [.yellow, .deepPurple,  .clear])
     
     
     // Mark: Computed properties
@@ -35,7 +35,7 @@ struct ContentView: View {
             //Second gradient
             RadialGradient(
                 gradient: secondGradientColors,
-                center: .bottomTrailing,
+                center: UnitPoint(x: 1.1, y: 1.1),
                 startRadius: 0,
                 endRadius: 1000
             )
